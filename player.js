@@ -141,7 +141,7 @@
     ctx.strokeStyle = color;
     ctx.lineWidth = width;
     ctx.shadowBlur = blur;
-    ctx.shadowColor = "rgba(255, 40, 50, 0.9)";
+    ctx.shadowColor = "rgba(35, 85, 200, 0.9)";
     ctx.stroke();
   }
 
@@ -150,9 +150,9 @@
     var w = 2 + b.power * 3;
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
-    strokePath(b.main, w * 3, "rgba(255, 60, 70, " + (0.42 * a).toFixed(3) + ")", 34);
+    strokePath(b.main, w * 3, "rgba(55, 125, 255, " + (0.42 * a).toFixed(3) + ")", 34);
     b.branches.forEach(function (br) {
-      strokePath(br, w * 1.5, "rgba(255, 60, 70, " + (0.38 * a).toFixed(3) + ")", 18);
+      strokePath(br, w * 1.5, "rgba(55, 125, 255, " + (0.38 * a).toFixed(3) + ")", 18);
     });
     strokePath(b.main, w, "rgba(255, 255, 255, " + a.toFixed(3) + ")", 10);
     b.branches.forEach(function (br) {
@@ -163,7 +163,7 @@
   function render() {
     ctx.clearRect(0, 0, W, H);
     if (flash > 0.01) {
-      ctx.fillStyle = "rgba(255, 50, 60, " + flash.toFixed(3) + ")";
+      ctx.fillStyle = "rgba(100, 170, 255, " + flash.toFixed(3) + ")";
       ctx.fillRect(0, 0, W, H);
     }
     flash *= 0.84;
