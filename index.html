@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="dark" name="color-scheme"/>
+<meta content="#070b14" name="theme-color"/>
+<meta content="Downloads, tools and links from Maxen" name="description"/>
+<meta content="stripes.lol" property="og:title"/>
+<meta content="Downloads, tools and links from Maxen" property="og:description"/>
+<meta content="151.png" property="og:image"/>
+<title>MaxenHub</title>
+<link href="151.png" rel="icon"/>
+<link href="styles.css" rel="stylesheet"/>
+<style>
+        body.intro {
+            background-color: var(--beat-color-pulse, var(--bg));
+        }
+    </style>
+</head>
+<body class="intro">
+<canvas aria-hidden="true" id="lightning-canvas"></canvas>
+<audio crossorigin="anonymous" id="bg-audio" preload="none"></audio>
+<div class="dock">
+<button aria-pressed="false" class="music-toggle" type="button"><span aria-hidden="true" class="eq"><i></i><i></i><i></i></span><span class="music-label">Music off</span></button>
+</div>
+<div id="app">
+<div class="intro-overlay" id="overlay-screen">
+<div class="intro-cta" id="enter-status">Click to Enter...</div>
+</div>
+<div class="main-content" id="site-content">
+<div class="page">
+<header class="hero">
+<div class="avatar-wrap"><img alt="Cat" class="avatar" src="151.png"/></div>
+<h1 class="hero-title">MaxenHub</h1>
+</header>
+<div class="sub-locker" id="subscription-modal">
+<h3>Attention</h3>
+<p>Please Subscribe to my channel before continuing to my site.</p>
+<a class="btn btn-primary btn-block" href="https://youtube.com/@StupiddudeGT?sub_confirmation=1" id="subscribe-action-btn" rel="noopener" target="_blank">1. Subscribe on YouTube</a>
+<p class="error-msg" id="locker-error">Please complete step 1 before checking status!</p>
+<button class="btn btn-block" id="verify-action-btn" type="button">2. Check Verification</button>
+</div>
+<main class="section">
+<div class="search"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+<input aria-label="Search links" autocomplete="off" data-filter="#menu-links" placeholder="Search links" spellcheck="false" type="search"/>
+<kbd>/</kbd>
+</div>
+<p class="empty" data-empty="">Nothing matches that search.</p>
+<nav class="list" id="menu-links">
+<a class="row" data-search="mikeybox standalone ac mods" href="https://mikeybox.ai/" style="--i:10">
+<span class="row-body">
+<span class="row-title">Mikeybox</span>
+<span class="row-desc">Standalone AC Mods</span>
+</span>
+<span class="row-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></span>
+</a>
+</nav>
+</main>
+</div>
+</div>
+</div>
+<script defer="" src="site.js"></script>
+<script defer="" src="cursor.js"></script>
+<script defer="" src="player.js"></script>
+</body>
+</html>
